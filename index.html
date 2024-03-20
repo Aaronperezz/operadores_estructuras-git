@@ -7,5 +7,24 @@
   </head>
   <body>
     <h1>Practica ejercicio operadpres y estructuras de control</h1>
+
+    <h2>Verificación de Campo de Texto</h2>
+
+    <label for="campoTexto">Ingrese su texto:</label>
+    <input type="text" id="campoTexto" />
+    <button onclick="verificarCampo()">Verificar</button>
+
+    <script>
+      function verificarCampo() {
+        // Obtener el valor del campo de texto
+        let texto = document.getElementById("campoTexto").value;
+
+        // Verificar si el campo está vacío
+        if (texto === "") {
+          // Mostrar mensaje de alerta
+          alert("Falta rellenar el campo");
+        }
+      }
+    </script>
   </body>
 </html>
